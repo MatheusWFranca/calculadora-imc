@@ -27,14 +27,19 @@ p {
   padding: 20px;
   background: #fff;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .text-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 500px) {
+  .text-container {
+    flex-direction: column;
+  }
+}
 
 form input, form label, form button {
   display: block;
